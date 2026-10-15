@@ -85,17 +85,3 @@ That Bracha, that last blessing I gave to Rebbe before we parted.  I blessed hi
 May G-d console Rebbe’s widow and his children, and all of us, his students, among all the mourners of Zion and Jerusalem.
 
 Rabbi Yerachmiel Seplowitz
-
-***(An additional apprecaition of Rabbi Chait, written the following week, can be found at*** [***"Heels and Smiles."***](http://torahtalk.wordpress.com/2009/08/07/%e2%80%9cheels-and-smiles%e2%80%9d/)***)*\---------------------------------------------------------------------------------**
-
-This is the weekly message at [TorahTalk.net](http://www.torahtalk.net/). Copyright © 2000-2010 by Rabbi Yerachmiel Seplowitz.  May be reprinted. Please include copyright information.
-
-**\---------------------------------------------------------------------------------**
-
-Rabbi Yerachmiel Seplowitz is a Mohel ([Brisrabbi.com](http://www.brisrabbi.com/))  and chaplain in Monsey, New York. For information about scheduling a Bris or a lecture, or just to say hello, call (800) 83MOHEL.
-
-**\---------------------------------------------------------------------------------**
-
-To subscribe to this mailing, send an e-mail to [TorahTalk@gmail.com](mailto:TorahTalk@gmail.com) and write **SUBSCRIBE** in the subject line.
-
-To unsubscribe, send an e-mail to [TorahTalk@gmail.com](mailto:TorahTalk@gmail.com) and write **UNSUBSCRIBE** on the subject line.

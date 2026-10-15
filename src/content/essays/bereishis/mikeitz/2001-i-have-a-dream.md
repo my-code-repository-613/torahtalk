@@ -50,39 +50,3 @@ The difference is whether we jump out of bed and take on the world or roll over 
 Have a great Shabbos.
 
 Rabbi Yerachmiel Seplowitz
-
-**————————————————————————–FROM THE ARCHIVES“*Vinegar* Latkes??!” (2009)**
-
-…The Chanukah story is not the only record of a candle lighting miracle.…Rabbi Chanina’s daughter who was setting up her Shabbos candles.  She inserted a wick into the lamp and poured in the oil.  She lit the wick, recited the blessing, and welcomed the Sabbath.  Suddenly, to her shock, she realized that she had accidentally filled her lamp with VINEGAR!
-
-She was devastated…
-
-Her father was unfazed.  “What are you worried about?” he asked…
-
-[Read more](http://torahtalk.wordpress.com/2009/12/16/844/)
-
-**————————————————————————–“Holy Gangsters” (2000)**
-
-Things aren’t always as they seem to be.
-
-A superficial reading of the Torah and the Prophets can give us a very jaded view of the lives and characters of Biblical personalities.  Without a thorough understanding of the events being described, it is very easy to come away from the text with a cynical and distorted picture.  We can, for example, come to make the mistake, G-d forbid, of seeing David and Sampson as bloodthirsty and lustful barbarians (an opinion shared by many self-appointed Biblical “experts”).
-
-One case in point is the rivalry between Joseph and his brothers. Last week’s and this week’s Torah Portions seem to indicate to us that Jacob naively played favorites among his sons. Joseph comes across as an arrogant and immature show-off who shares his dreams of someday being his brothers’ ruler.  The brothers act like petty thugs who will stop at nothing, including murder, to silence Joseph’s illusions of grandeur…
-
-[Read more](http://torahtalk.wordpress.com/2000/12/27/mikeitz-%e2%80%9choly-gangsters%e2%80%9d/)
-
-**———————————————————————————**
-
-This is the weekly message at **[TorahTalk.org](http://www.torahtalk.org/)**.   Copyright © 2000-2015 by Rabbi Yerachmiel Seplowitz.  May be reprinted. Please include copyright information.
-
-**————————————————————————–**
-
-Rabbi Yerachmiel Seplowitz is a Mohel ([www.Brisrabbi.com](http://www.brisrabbi.com/))  and chaplain in Monsey, New York. For information about scheduling a Bris or a lecture, or just to say hello, call (800) 83MOHEL.
-
-**————————————————————————–**
-
-If you enjoyed this message, send it to a friend.
-
-To subscribe, send an e-mail to **[Torahtalk@gmail.com](mailto:Torahtalk@gmail.com)**, and type “Subscribe” on the subject line.
-
-To unsubscribe, type “Unsubscribe” on the subject line.

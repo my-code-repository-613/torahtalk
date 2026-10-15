@@ -40,20 +40,4 @@ Be there.  Join your People in accepting G-d's gift.  It will change your life
 
 Have a Good Yom Tov and a Happy Shavuos.
 
-Rabbi Yerachmiel Seplowitz 
-
-***To leave a comment about this article, or to read other readers’ comments on this article, scroll down to the bottom.*\---------------------------------------------------------------------------------**
-
-This is the weekly message at [www.torahtalk.org](http://www.torahtalk.org/).   Copyright © 2000-2010 by Rabbi Yerachmiel Seplowitz.  May be reprinted. Please include copyright information. 
-
-—————————————————————————
-
-Rabbi Yerachmiel Seplowitz is a Mohel ([www.Brisrabbi.com](http://www.brisrabbi.com/)) and chaplain in Monsey, New York. For information about scheduling a Bris or a lecture, or just to say hello, call (800) 83MOHEL. 
-
-—————————————————————————
-
-If you enjoyed this, send it to a friend. 
-
-To subscribe to Torah Talk, send an e-mail to [TorahTalk@gmail.com](mailto:TorahTalk@gmail.com), and type “Subscribe” on the subject line. 
-
-To unsubscribe, type “Unsubscribe” on the subject line.
+Rabbi Yerachmiel Seplowitz

@@ -106,5 +106,3 @@ I love you, Rebbe.
 Have a great Shabbos.
 
 Rabbi Yerachmiel Seplowitz
-
-**\--------------------------------------------------------------------FROM THE ARCHIVES**

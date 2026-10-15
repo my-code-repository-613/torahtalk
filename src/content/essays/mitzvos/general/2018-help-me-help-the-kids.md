@@ -12,6 +12,4 @@ Hello, thanks for visiting this page. In August of 2016 and 2017 I had the honor
 
 ### **How do I donate to sponsor the ride?**
 
-In early January when the ride officially opens up, I will have a page where you can donate directly.  When that happens, I will put the link on this page. Alternatively, you can mail your tax-deductible check to me, payable to Bike4Chai, and I will see that it is appropriately processed.  Or, if you prefer, send me an email now, and i will send you the link when the page is live. You   can send your check to Bike4Chai c/o Rabbi Yerachmiel Seplowitz, 5 Glenmere Court, Monsey, NY 10952. Learn more about Camp Simcha [here](https://www.campsimcha.org/camp-simcha/).  Learn more about Bike4Chai [here](https://www.bike4chai.com/). Thank you in advance.  May you and everyone you love always be blessed with good health. Rabbi Yerachmiel Seplowitz
-
-### **P.S. I will continue to update this page with links to allow you to donate directly, as well as updates as to how I'm doing, with G-d's help, with my recovery and training.**  --
+In early January when the ride officially opens up, I will have a page where you can donate directly.  When that happens, I will put the link on this page. Alternatively, you can mail your tax-deductible check to me, payable to Bike4Chai, and I will see that it is appropriately processed.  Or, if you prefer, send me an email now, and i will send you the link when the page is live. You   can send your check to Bike4Chai c/o Rabbi Yerachmiel Seplowitz

@@ -45,5 +45,3 @@ Fruit is considered to represent good deeds, while fragrance implies learning. 
  Have a Good Shabbos and a Good Yom Tov.
 
 Rabbi Yerachmiel Seplowitz
-
-**\----------------------------------------------------------------------** This is the weekly message at [http://torahtalk.wordpress.com](http://torahtalk.wordpress.com/2009/08/14/reeh-the-tire-kicker/). Copyright © 2000-2009 by Rabbi Yerachmiel Seplowitz.  May be reprinted. Please include copyright information. **\----------------------------------------------------------------------** Rabbi Yerachmiel Seplowitz is a Mohel ([Brisrabbi.com](http://www.brisrabbi.com/)) and chaplain in Monsey, New York. For information about scheduling a Bris or a lecture, or just to say hello, call (800) 83MOHEL. **\----------------------------------------------------------------------** If you enjoyed this message, email it to a friend. To subscribe to this mailing, send an e-mail to TorahTalk  @gmail.com and type SUBSCRIBE on the subject line. To unsubscribe, send an e-mail to TorahTalk  @gmail.com and type UNSUBSCRIBE on the subject line.

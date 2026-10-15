@@ -86,7 +86,25 @@ for (const it of items) {
   // Year: prefer "(2009)" style markers in title, else the post year
   const yearInTitle = rawTitle.match(/\((19|20)\d{2}\)/)?.[0]?.slice(1, -1);
   const year = Number(yearInTitle ?? date.getUTCFullYear());
+  // Drop teasers that slipped past the length filter: excerpt + "Read more" + prior-year links, no sign-off
+  const plain = html.replace(/<[^>]+>/g, ' ');
+  if (!/yerachmiel\s+seplowitz/i.test(plain) && /read (the rest of this message|more)/i.test(plain) && /previous years/i.test(plain)) {
+    report.push([wpId, type, status, date.toISOString(), '', '', '', link, 'skipped: teaser (read-more + archive links, no sign-off)']); continue;
+  }
   let md = td.turndown(html).replace(/(\w)\*\*(\w)/g, '$1$2').replace(/\*\*\s*\*\*/g, '').replace(/\n{3,}/g, '\n\n').trim();
+  // Cut the old email-list footer: everything after the last "Rabbi Yerachmiel Seplowitz" sign-off line
+  let footerNote = '';
+  { const OPEN = 1500; let cut = -1;
+    const nameRe = /(?:rabbi\s+)?yerachmiel\s+seplowitz/gi; nameRe.lastIndex = OPEN; const nm = nameRe.exec(md);
+    const phrase = /have a (great|good|wonderful|happy|meaningful|peaceful)[^\n.!]{0,80}[.!]?/i.exec(md.slice(OPEN));
+    const ph = phrase ? { index: OPEN + phrase.index, end: OPEN + phrase.index + phrase[0].length } : null;
+    if (ph && nm && nm.index - ph.end < 200 && nm.index >= ph.index) cut = nm.index + nm[0].length;   // "Have a great Shabbos. Rabbi Yerachmiel Seplowitz"
+    else if (ph && (!nm || ph.index < nm.index)) cut = ph.end;                                           // sign-off without the name
+    else if (nm) cut = nm.index + nm[0].length;                                                          // name only
+    const boiler = /(to leave a comment about this article|this is the weekly message at|from the archives|messages from previous years|copyright ©)/i.exec(md.slice(OPEN));
+    if (boiler && (cut < 0 || OPEN + boiler.index < cut)) cut = OPEN + boiler.index;                     // never keep boilerplate
+    if (cut >= 0) {
+      const removed = md.slice(cut).split('\n').filter(l => l.trim()).length; md = md.slice(0, cut).replace(/[*_]+$/, '').trim(); if (removed) footerNote = `footer cut: ${removed} lines`; } }
   const key = `${sefer}/${parsha}/${norm(title)}`;
   if (seen.has(key)) { const prev = seen.get(key); if (prev.year <= year) { report.push([wpId, type, status, date.toISOString(), parsha, year, prev.out, link, `REPOST of ${prev.year}; skipped`]); redirects.push(`${new URL(link).pathname}  /essays/${prev.id}/  301`); continue; } else { fs.rmSync(prev.out, { force: true }); report.push([prev.wpId, '', '', '', parsha, prev.year, prev.out, '', `REPOST superseded by earlier ${year}`]); } }
   const id = `${sefer}/${parsha}/${year}-${slugify(title)}`;
@@ -98,7 +116,7 @@ for (const it of items) {
   fs.writeFileSync(out, `---\n${front}\n---\n\n${md}\n`);
   seen.set(key, { year, out, id, wpId });
   redirects.push(`${new URL(link).pathname}  /essays/${id}/  301`);
-  report.push([wpId, type, status, date.toISOString(), parsha, year, out, link, 'ok']); written++;
+  report.push([wpId, type, status, date.toISOString(), parsha, year, out, link, 'ok' + (footerNote ? '; ' + footerNote : '')]); written++;
 }
 fs.mkdirSync('import', { recursive: true });
 fs.writeFileSync('import/report.csv', report.map(r => r.map(c => `"${String(c).replace(/"/g, '""')}"`).join(',')).join('\n'));

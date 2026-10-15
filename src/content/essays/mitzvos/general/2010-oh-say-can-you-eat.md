@@ -61,19 +61,3 @@ Liberty is a precious – and dangerous – gift. Caution: Handle with Care!
 Have a happy and meaningful Independence Day.  May G-d Bless America.
 
 Rabbi Yerachmiel Seplowitz
-
-**—————————————————————————** 
-
-This is the message at [www.torahtalk.org](http://www.torahtalk.org/).   Copyright © 2000-2010 by Rabbi Yerachmiel Seplowitz.  May be reprinted. Please include copyright information. 
-
-————————————————————————— 
-
-Rabbi Yerachmiel Seplowitz is a Mohel ([www.Brisrabbi.com](http://www.brisrabbi.com/)) and chaplain in Monsey, New York. For information about scheduling a Bris or a lecture, or just to say hello, call (800) 83MOHEL. 
-
-————————————————————————— 
-
-If you enjoyed this, send it to a friend. 
-
-To subscribe to Torah Talk, send an e-mail to [TorahTalk@gmail.com](mailto:TorahTalk@gmail.com), and type “Subscribe” on the subject line. 
-
-To unsubscribe, type “Unsubscribe” on the subject line.

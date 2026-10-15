@@ -59,5 +59,3 @@ Appreciate G-d’s gifts and continue to have a happy (new) year.
 Have a meaningful fast, a Good Shabbos, and a Happy Purim.
 
 Rabbi Yerachmiel Seplowitz
-
-(Read more about the story and the Mitzvahs of Purim [here](http://www.aish.com/h/pur/).)
