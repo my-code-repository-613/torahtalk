@@ -1,0 +1,110 @@
+---
+title: "Where's The Beef?"
+sefer: "vayikra"
+parsha: "vayikra"
+year: 2010
+date: "2010-03-17"
+verses: "Leviticus 1:1-5:26"
+originalUrl: "https://torahtalk.wordpress.com/2010/03/17/vaikra-wheres-the-beef/"
+wpId: 1524
+---
+
+We are about to begin our annual reading of the Book of Leviticus.  **Leviticus, as the name implies, is the book of the [Levites](http://www.ou.org/about/judaism/jl.htm#levi). The role of the Levites, especially the [Kohain](http://www.ou.org/about/judaism/jl.htm#kohen)\-Levites, was to conduct the Temple Service.  (Since Aaron, the first Kohain (priest) was from the Tribe of Levi; every Kohain is also a Levi.) 
+
+For the past 2,000 years, we have been awaiting the rebuilding of the Temple.  It is the focus of all our prayers.  We pray facing the Temple Mount.  As a bride and groom stand beneath the Chuppah, we break a glass to recall that the Temple lies in ruins. 
+
+Yes, we miss the Temple and eagerly anticipate its return.  But do we know what it is that we are waiting for? 
+
+The Book of Leviticus goes into great detail describing the Temple Service.  I think most of us would be surprised by the description.  
+
+*...If someone wants to bring an offering to G-d, bring your "Korban" (sacrifice) from the cattle and the sheep.* (Leviticus, 1:2) 
+
+Leviticus is a vegetarian's nightmare.  The Torah discusses the slaughter of the animal, the flaying of the hide from the carcass, and the burning of the limbs and entrails on the Altar.  There are offerings that are eaten by the Priests, and offerings that were totally burnt on the Altar. 
+
+There was vegetarian fare as well.  Flour, oil, and wine were common ingredients in offerings to G-d on His Altar in Jerusalem. 
+
+IS THIS WHAT WE ARE PRAYING FOR?!!  Do we, the civilized Jews of the 21st really expect to return to the antiquated cult of animal sacrifice?! Can you see it -- Jackie Mason, (a Kohain) slaughtering bulls on the Temple Mount? Meanwhile, Paul McCartney and the animal rights crowd will be protesting outside! :-)  And should we really be burning all that meat?  Is G-d THAT hungry?  Why not send it to a homeless shelter??! :-)
+
+\-----------------------------------------------------------
+
+The interesting thing about animal sacrifice is that there is no such thing. The word "sacrifice" implies giving up something that you have or deserve.  The Hebrew word "*Korbon*" comes from the word *KAROV* -- near.  A Korbon is something that brings one nearer to G-d. 
+
+G-d created us and placed us into a physical world.  We are given the opportunity to either elevate or lower ourselves.  It all depends upon our approach. 
+
+We have been created with certain basic drives.  Without these drives, it would be impossible for the human race to survive.  In this respect, we are not that different from the animals.  Big fish eat little fish, only to be eaten by bigger fish! The lion eats the antelope; not because he's better, but because he's faster. 
+
+Do we eat meat because we are the smartest members of the animal kingdom? Or is it that we are inherently greater than the animals?  (A third possibility, that we shouldn't eat meat at all, is simply not a Torah concept.  When Noah left the Ark, he was given permission to eat meat. Why do you think he brought a larger number of Kosher animals than non-Kosher?) 
+
+G-d has created us with many physical similarities to the animal world.  Our job is to infuse spirituality into the physical. 
+
+Isn't it interesting that those parts of our physical lives that are the most basic are those that are most regulated by religious law?  What's more physical than enjoying a thick, juicy, steak?  The Torah provides many complex laws about how to properly slaughter and prepare meat before it may be eaten.  What is more animalistic than drinking wine to excess and losing all control?  There are several restrictions on who may make or handle Kosher wine.  Our holiest ceremonies include the consumption of wine.  Bread, they say, is the staff of life.  Before bread may be eaten, a piece of dough, called *[Challah](http://www.ou.org/about/judaism/bc.htm#challah)*, must be separated. (In Temple times, this dough was given to the Kohain.  Today, the dough is left in the oven to be burnt.)  There is no "instinct" more totally sensual and physical than that of reproduction.  This, too, becomes sanctified through a holy function called marriage.
+
+\-----------------------------------------------------------
+
+Some people claim that the service in the Temple was a response to the baser instincts in man.  They assume that since the ancient Israelites were surrounded by other cultures that engaged in sacrifice (including human), we engaged in a "me too" type of religion that won't be necessary in the future.  
+
+Nothing could be further from the truth. By bringing a Korbon --"sacrifice" in the Temple, we make ourselves "*Karov*" -- close to G-d.  We express the spirituality of EVERY physical act.  The Temple that stood in Jerusalem did not support a "bloody cult of sacrifice."  It was a place that declared G-d as the Master of the World.   It was a place that declared that there is nothing inherently sinful in human existence. It was a place that brought potential holiness to fruition. 
+
+And it will do so again.  May it be soon. 
+
+Have a great Shabbos.
+
+Rabbi Yerachmiel Seplowitz
+
+**———————————————FROM THE ARCHIVES“Where’s The Beef?” (2010)**
+
+ …Leviticus is a vegetarian’s nightmare.  …  Do we, the civilized Jews of the 21st century really expect to return to the antiquated cult of animal sacrifice?! Can you see it… Jackie Mason… slaughtering bulls on the Temple Mount? Meanwhile, Paul McCartney and the animal rights crowd will be protesting outside!  :-) And should we really be burning all that meat?  Is G-d THAT hungry?  Why not send it to a homeless shelter??! :-)… The interesting thing about animal sacrifice is that there is no such thing…
+
+[Read more.](http://wp.me/pBfWQ-oA)
+
+ **———————————————————————————“Bringing G-d Home” (2008)**
+
+ *He called to Moses, and G-d spoke to him from the Tent of Meeting…*  (Leviticus, 1:1)
+
+ The grammar of this verse is problematic – “He *called to Moses.”  WHO* called to Moses?  Obviously, as we see at the end of the verse, it was G-d who called him.  Wouldn’t the verse be clearer if it said, “*G-d called to Moses, and He spoke to him from the Tent of Meeting”?*…  G-d… “shrank Himself” … 
+
+[Read more](http://wp.me/pBfWQ-oG).
+
+**———————————————————————————“Keeping Score” (2006)** 
+
+I try to write a new Torah Talk message every week…I was planning to write a new message this week.  As you will soon see, I have good reason to send this message, from three years ago, once again. 
+
+Last Shabbos, my family enjoyed the pleasure of hosting a couple whom we have known for many years…  As we sat at the table Friday night, I told them a story about a former student of mine.  I didn’t recall at the time that I had written up the story in Torah Talk, and I certainly didn’t realize that it was written in reference to this week’s Torah Portion. But I was totally unprepared for what met me on Sunday morning…
+
+[Read more.](http://wp.me/pBfWQ-oI)
+
+**———————————————————————————“Dehydrated Water” (2005)**
+
+… Salt is a preservative.  Before the days of refrigeration, they used to preserve meats by salting them.  A well-salted side of beef could last for months without being refrigerated.
+
+Why would you want to preserve foods that are being “consumed” by G-d on the Altar?  If they’re being “eaten” right away, they won’t have time to spoil!  If you cook something and eat it immediately, there is no reason to keep it fresh by putting it in the Fridge!…
+
+[Read more.](http://wp.me/pBfWQ-ov)
+
+**———————————————————————————“Hey, YOU!” (2004)**
+
+… Did you ever send someone a well thought-out message by email?  A little while later, we receive the response — a short, terse, copy of our comments with a two-or-three word response.  No “hello,” no “good-bye,” just the proclamation from on high!…
+
+[Read more.](http://wp.me/pBfWQ-oy)
+
+**———————————————————————————“Little Big Man” (2001)**
+
+They say out there that Jews have horns.  Even Michelangelo thought so — you remember his famous statue of Moses with horns.  Where’d he get that crazy notion? …
+
+[Read more.](http://wp.me/pBfWQ-oE)
+
+**——————————————————————————**
+
+ This is the weekly message at [www.torahtalk.org](http://www.torahtalk.org/).   Copyright © 2000-2011 by Rabbi Yerachmiel Seplowitz.  May be reprinted. Please include copyright information.
+
+——————————————————————————
+
+Rabbi Yerachmiel Seplowitz is a Mohel ([www.Brisrabbi.com](http://www.brisrabbi.com/))  and chaplain in Monsey, New York. For information about scheduling a Bris or a lecture, or just to say hello, call (800) 83MOHEL.
+
+——————————————————————————
+
+If you enjoyed this, send it to a friend.
+
+To subscribe to Torah Talk, send an e-mail to [TorahTalk@gmail.com](mailto:TorahTalk@gmail.com), and type “Subscribe” on the subject line.
+
+To unsubscribe, type “Unsubscribe” on the subject line.
