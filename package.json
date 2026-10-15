@@ -1,0 +1,38 @@
+{
+  "name": "torahtalk",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "node scripts/make-pdfs.mjs && astro build",
+    "preview": "astro preview",
+    "convert": "node scripts/convert-wxr.mjs",
+    "pdfs": "node scripts/make-pdfs.mjs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/my-code-repository-613/torahtalk.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/my-code-repository-613/torahtalk/issues"
+  },
+  "homepage": "https://github.com/my-code-repository-613/torahtalk#readme",
+  "dependencies": {
+    "@tailwindcss/vite": "^4.3.3",
+    "astro": "^7.4.0",
+    "tailwindcss": "^4.3.3"
+  },
+  "devDependencies": {
+    "fast-xml-parser": "^5.11.2",
+    "gray-matter": "^4.0.3",
+    "marked": "^18.1.1",
+    "pdfkit": "^0.20.2",
+    "turndown": "^7.2.4"
+  },
+  "type": "module",
+  "private": true
+}

@@ -1,0 +1,44 @@
+---
+import Base from '../layouts/Base.astro';
+import { allEssays, essayUrl, pdfUrl, label, fmtDate } from '../lib/essays';
+const essays = await allEssays();
+const latest = essays[0];
+const sameParsha = latest ? essays.filter(e => e.id !== latest.id && e.data.sefer === latest.data.sefer && e.data.parsha === latest.data.parsha) : [];
+const recent = essays.slice(1, 7);
+const L = latest ? label(latest) : null;
+---
+<Base title="Torah Talk">
+  {latest && L && (
+    <section class="grid gap-10 md:grid-cols-[1fr_280px]">
+      <article>
+        <p class="font-sans text-xs uppercase tracking-widest text-gold mb-3">This week · {L.sefer} · {L.parsha}{L.verses && ` (${L.verses})`}</p>
+        <h1 class="text-4xl font-semibold text-wine-dark leading-tight mb-2">{latest.data.title}</h1>
+        <p class="font-sans text-sm text-muted mb-6">{fmtDate(latest.data.date)} · Rabbi Yerachmiel Seplowitz</p>
+        {latest.data.summary && <p class="text-lg text-ink/90 mb-6">{latest.data.summary}</p>}
+        <div class="flex flex-wrap gap-3 font-sans text-sm">
+          <a href={essayUrl(latest)} class="bg-wine text-paper px-5 py-2.5 rounded hover:bg-wine-dark">Read this week's message</a>
+          <a href={pdfUrl(latest)} class="border border-wine text-wine px-5 py-2.5 rounded hover:bg-white">Download PDF</a>
+        </div>
+      </article>
+
+      <aside class="font-sans text-sm">
+        {sameParsha.length > 0 && (
+          <div class="mb-8">
+            <h2 class="text-xs uppercase tracking-widest text-muted mb-3">More on {L.parsha}</h2>
+            <ul class="space-y-2">
+              {sameParsha.map(e => <li><a href={essayUrl(e)} class="hover:text-wine">{e.data.title}</a> <span class="text-muted">({e.data.year})</span></li>)}
+            </ul>
+          </div>
+        )}
+        <div>
+          <h2 class="text-xs uppercase tracking-widest text-muted mb-3">Recent messages</h2>
+          <ul class="space-y-2">
+            {recent.map(e => { const l = label(e); return <li><a href={essayUrl(e)} class="hover:text-wine">{e.data.title}</a><div class="text-xs text-muted">{l.parsha} · {e.data.year}</div></li>; })}
+          </ul>
+          <a href="/archive/" class="inline-block mt-4 text-wine hover:underline">Browse the full archive →</a>
+        </div>
+      </aside>
+    </section>
+  )}
+  {!latest && <p>No essays published yet.</p>}
+</Base>

@@ -1,0 +1,28 @@
+---
+import Base from '../../../layouts/Base.astro';
+import { SEFARIM } from '../../../lib/torah';
+import { allEssays, essayUrl, pdfUrl, fmtDate } from '../../../lib/essays';
+export async function getStaticPaths() {
+  return SEFARIM.flatMap(s => s.parshiyos.map(p => ({ params: { sefer: s.slug, parsha: p.slug }, props: { sefer: s, parsha: p } })));
+}
+const { sefer, parsha } = Astro.props;
+const essays = (await allEssays()).filter(e => e.data.sefer === sefer.slug && e.data.parsha === parsha.slug);
+---
+<Base title={`${parsha.name} — ${sefer.name}`}>
+  <p class="font-sans text-xs uppercase tracking-widest text-gold mb-2"><a href="/archive/" class="hover:underline">Archive</a> › <a href={`/archive/${sefer.slug}/`} class="hover:underline">{sefer.name}</a> › {parsha.name}</p>
+  <h1 class="text-3xl font-semibold text-wine-dark mb-1">{parsha.name} <span class="text-muted font-normal text-xl">{parsha.hebrew}</span></h1>
+  <p class="font-sans text-sm text-muted mb-10">{parsha.verses}{parsha.verses && ' · '}{essays.length} messages</p>
+  {essays.length === 0 && <p class="text-muted">No messages for this parsha yet.</p>}
+  <ol class="space-y-5">
+    {essays.map(e => (
+      <li class="bg-white/70 border border-rule rounded p-5">
+        <div class="flex flex-wrap items-baseline justify-between gap-2">
+          <h2 class="text-xl font-semibold"><a href={essayUrl(e)} class="text-wine hover:underline">{e.data.title}</a></h2>
+          <span class="font-sans text-sm text-muted">{e.data.year}</span>
+        </div>
+        {e.data.summary && <p class="mt-2 text-ink/85">{e.data.summary}</p>}
+        <p class="font-sans text-xs text-muted mt-3">{fmtDate(e.data.date)} · <a href={essayUrl(e)} class="text-wine hover:underline">Read</a> · <a href={pdfUrl(e)} class="text-wine hover:underline">PDF</a></p>
+      </li>
+    ))}
+  </ol>
+</Base>

@@ -1,0 +1,22 @@
+---
+import Base from '../../../layouts/Base.astro';
+import { SEFARIM } from '../../../lib/torah';
+import { allEssays, essayUrl } from '../../../lib/essays';
+export async function getStaticPaths() { return SEFARIM.map(s => ({ params: { sefer: s.slug }, props: { sefer: s } })); }
+const { sefer } = Astro.props;
+const essays = (await allEssays()).filter(e => e.data.sefer === sefer.slug);
+---
+<Base title={`${sefer.name} — Archive`}>
+  <p class="font-sans text-xs uppercase tracking-widest text-gold mb-2"><a href="/archive/" class="hover:underline">Archive</a> › {sefer.name}</p>
+  <h1 class="text-3xl font-semibold text-wine-dark mb-1">{sefer.name} <span class="text-muted font-normal text-xl">{sefer.english} · {sefer.hebrew}</span></h1>
+  <p class="font-sans text-sm text-muted mb-10">{essays.length} messages</p>
+  <div class="space-y-10">
+    {sefer.parshiyos.map(p => { const list = essays.filter(e => e.data.parsha === p.slug); if (!list.length) return null; return (
+      <section>
+        <h2 class="text-xl font-semibold text-wine mb-1"><a href={`/archive/${sefer.slug}/${p.slug}/`} class="hover:underline">{p.name}</a> <span class="font-sans text-sm font-normal text-muted">{p.verses}</span></h2>
+        <ul class="font-sans text-sm grid sm:grid-cols-2 gap-x-6 gap-y-1 mt-2">
+          {list.map(e => <li><span class="text-muted w-12 inline-block">{e.data.year}</span><a href={essayUrl(e)} class="hover:text-wine">{e.data.title}</a></li>)}
+        </ul>
+      </section>); })}
+  </div>
+</Base>

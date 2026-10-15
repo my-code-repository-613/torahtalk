@@ -1,0 +1,21 @@
+---
+import Base from '../../layouts/Base.astro';
+import { counts } from '../../lib/essays';
+const { bySefer, byParsha, total, sefarim } = await counts();
+---
+<Base title="Archive">
+  <h1 class="text-3xl font-semibold text-wine-dark mb-2">Archive</h1>
+  <p class="font-sans text-sm text-muted mb-10">{total} messages, 2000–present. Browse by sefer, then by parsha.</p>
+  <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+    {sefarim.map(s => (
+      <section class="bg-white/70 border border-rule rounded p-5">
+        <h2 class="text-xl font-semibold text-wine"><a href={`/archive/${s.slug}/`} class="hover:underline">{s.name}</a> <span class="font-sans text-sm font-normal text-muted">{s.english} · {bySefer[s.slug] ?? 0}</span></h2>
+        <ul class="mt-3 font-sans text-sm columns-2 gap-4">
+          {s.parshiyos.map(p => { const n = byParsha[`${s.slug}/${p.slug}`] ?? 0; return n > 0
+            ? <li><a href={`/archive/${s.slug}/${p.slug}/`} class="hover:text-wine">{p.name}</a> <span class="text-muted">{n}</span></li>
+            : <li class="text-muted/60">{p.name}</li>; })}
+        </ul>
+      </section>
+    ))}
+  </div>
+</Base>

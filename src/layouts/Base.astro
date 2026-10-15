@@ -1,0 +1,50 @@
+---
+import '../styles/global.css';
+import { SEFARIM } from '../lib/torah';
+interface Props { title: string; description?: string }
+const { title, description = 'Messages on the weekly Torah portion, Jewish holidays, and other Torah topics, by Rabbi Yerachmiel Seplowitz.' } = Astro.props;
+const fullTitle = title === 'Torah Talk' ? title : `${title} — Torah Talk`;
+---
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>{fullTitle}</title>
+  <meta name="description" content={description} />
+  <link rel="canonical" href={new URL(Astro.url.pathname, Astro.site)} />
+  <link rel="alternate" type="application/rss+xml" title="Torah Talk" href="/rss.xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+</head>
+<body class="min-h-screen flex flex-col">
+  <header class="no-print border-b border-rule bg-white/60">
+    <div class="mx-auto max-w-5xl px-4 py-5 flex flex-wrap items-baseline justify-between gap-4">
+      <a href="/" class="font-serif text-3xl font-semibold text-wine tracking-tight">Torah Talk</a>
+      <nav class="font-sans text-sm flex flex-wrap gap-x-5 gap-y-1">
+        <a href="/" class="hover:text-wine">This Week</a>
+        <a href="/archive/" class="hover:text-wine">Archive</a>
+        <a href="/about/" class="hover:text-wine">About the Rabbi</a>
+        <a href="/subscribe/" class="hover:text-wine">Subscribe</a>
+      </nav>
+    </div>
+    <div class="border-t border-rule bg-wine text-paper">
+      <div class="mx-auto max-w-5xl px-4 py-2 font-sans text-xs flex flex-wrap gap-x-4 gap-y-1">
+        {SEFARIM.map(s => <a href={`/archive/${s.slug}/`} class="opacity-90 hover:opacity-100 hover:underline">{s.name}</a>)}
+      </div>
+    </div>
+  </header>
+
+  <main class="mx-auto w-full max-w-5xl px-4 py-10 flex-1">
+    <slot />
+  </main>
+
+  <footer class="no-print border-t border-rule mt-16">
+    <div class="mx-auto max-w-5xl px-4 py-8 font-sans text-sm text-muted flex flex-wrap justify-between gap-4">
+      <p>© {new Date().getFullYear()} Rabbi Yerachmiel Seplowitz. Torah Talk has been published weekly since 2000.</p>
+      <p><a href="/rss.xml" class="hover:text-wine">RSS</a> · <a href="/subscribe/" class="hover:text-wine">Email</a></p>
+    </div>
+  </footer>
+</body>
+</html>

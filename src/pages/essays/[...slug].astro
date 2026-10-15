@@ -1,0 +1,48 @@
+---
+import { render } from 'astro:content';
+import Base from '../../layouts/Base.astro';
+import { allEssays, essayUrl, pdfUrl, label, fmtDate } from '../../lib/essays';
+export async function getStaticPaths() {
+  const essays = await allEssays();
+  return essays.map(e => ({ params: { slug: e.id }, props: { essay: e, all: essays } }));
+}
+const { essay, all } = Astro.props;
+const { Content } = await render(essay);
+const L = label(essay);
+const siblings = all.filter(e => e.id !== essay.id && e.data.sefer === essay.data.sefer && e.data.parsha === essay.data.parsha);
+---
+<Base title={essay.data.title} description={essay.data.summary}>
+  <div class="grid gap-10 lg:grid-cols-[1fr_260px]">
+    <article>
+      <div class="print-header hidden font-sans text-sm">Torah Talk · Rabbi Yerachmiel Seplowitz · torahtalk.org</div>
+      <p class="font-sans text-xs uppercase tracking-widest text-gold mb-2">
+        <a href={`/archive/${essay.data.sefer}/`} class="hover:underline">{L.sefer}</a> ›
+        <a href={`/archive/${essay.data.sefer}/${essay.data.parsha}/`} class="hover:underline">{L.parsha}</a>
+        {L.verses && <span class="text-muted normal-case tracking-normal"> ({L.verses})</span>}
+      </p>
+      <h1 class="text-4xl font-semibold text-wine-dark leading-tight mb-2">{essay.data.title}</h1>
+      <p class="font-sans text-sm text-muted mb-8">{fmtDate(essay.data.date)} · Rabbi Yerachmiel Seplowitz</p>
+
+      <div class="no-print flex gap-3 font-sans text-sm mb-8">
+        <a href={pdfUrl(essay)} class="border border-wine text-wine px-4 py-2 rounded hover:bg-white">Download PDF</a>
+        <button onclick="window.print()" class="border border-rule text-muted px-4 py-2 rounded hover:bg-white">Print</button>
+      </div>
+
+      <div class="prose-essay"><Content /></div>
+
+      <p class="mt-10 font-sans text-xs text-muted">© {essay.data.year} Rabbi Yerachmiel Seplowitz. You may reprint this message for non-commercial use with attribution to torahtalk.org.</p>
+    </article>
+
+    <aside class="no-print font-sans text-sm">
+      {siblings.length > 0 && (
+        <div class="sticky top-6">
+          <h2 class="text-xs uppercase tracking-widest text-muted mb-3">Other years on {L.parsha}</h2>
+          <ul class="space-y-2">
+            {siblings.map(e => <li><a href={essayUrl(e)} class="hover:text-wine">{e.data.title}</a> <span class="text-muted">({e.data.year})</span></li>)}
+          </ul>
+          <a href={`/archive/${essay.data.sefer}/${essay.data.parsha}/`} class="inline-block mt-4 text-wine hover:underline">All {L.parsha} messages →</a>
+        </div>
+      )}
+    </aside>
+  </div>
+</Base>

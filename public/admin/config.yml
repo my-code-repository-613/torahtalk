@@ -1,0 +1,130 @@
+# Decap CMS — the rabbi's posting form at torahtalk.org/admin
+backend:
+  name: github
+  repo: my-code-repository-613/torahtalk
+  branch: main
+  base_url: https://torahtalk-auth.REPLACE.workers.dev   # OAuth bridge (Cloudflare Worker) — set during Phase 3
+  commit_messages:
+    create: "New message: {{slug}}"
+    update: "Update message: {{slug}}"
+    delete: "Remove message: {{slug}}"
+
+site_url: https://torahtalk.org
+display_url: https://torahtalk.org
+logo_url: /favicon.svg
+locale: en
+
+media_folder: public/images
+public_folder: /images
+
+slug:
+  encoding: ascii
+  clean_accents: true
+
+collections:
+  - name: essays
+    label: "Torah Talk Messages"
+    label_singular: "Message"
+    folder: src/content/essays
+    create: true
+    path: "{{sefer}}/{{parsha}}/{{year}}-{{slug}}"
+    slug: "{{slug}}"
+    sortable_fields: [date, title, year]
+    summary: "{{year}} · {{parsha}} — {{title}}"
+    editor:
+      preview: true
+    fields:
+      - { name: title, label: "Title", widget: string, hint: "The message title only, e.g. Tug-of-War in the Garden of Eden" }
+      - name: sefer
+        label: "Sefer"
+        widget: select
+        options:
+          - { label: "Bereishis (Genesis)", value: bereishis }
+          - { label: "Shemos (Exodus)", value: shemos }
+          - { label: "Vayikra (Leviticus)", value: vayikra }
+          - { label: "Bamidbar (Numbers)", value: bamidbar }
+          - { label: "Devarim (Deuteronomy)", value: devarim }
+          - { label: "Holidays", value: holidays }
+          - { label: "Mitzvos & Topics", value: mitzvos }
+      - name: parsha
+        label: "Parsha / Topic"
+        widget: select
+        hint: "Pick the parsha (or holiday) this message is about."
+        options:
+          - { label: "— Bereishis —", value: "" }
+          - { label: "Bereishis", value: bereishis }
+          - { label: "Noach", value: noach }
+          - { label: "Lech Lecha", value: lech-lecha }
+          - { label: "Vayeira", value: vayeira }
+          - { label: "Chayei Sarah", value: chayei-sarah }
+          - { label: "Toldos", value: toldos }
+          - { label: "Vayeitzei", value: vayeitzei }
+          - { label: "Vayishlach", value: vayishlach }
+          - { label: "Vayeishev", value: vayeishev }
+          - { label: "Mikeitz", value: mikeitz }
+          - { label: "Vayigash", value: vayigash }
+          - { label: "Vayechi", value: vayechi }
+          - { label: "— Shemos —", value: "" }
+          - { label: "Shemos", value: shemos }
+          - { label: "Va'eira", value: vaeira }
+          - { label: "Bo", value: bo }
+          - { label: "Beshalach", value: beshalach }
+          - { label: "Yisro", value: yisro }
+          - { label: "Mishpatim", value: mishpatim }
+          - { label: "Terumah", value: terumah }
+          - { label: "Tetzaveh", value: tetzaveh }
+          - { label: "Ki Sisa", value: ki-sisa }
+          - { label: "Vayakhel", value: vayakhel }
+          - { label: "Pekudei", value: pekudei }
+          - { label: "— Vayikra —", value: "" }
+          - { label: "Vayikra", value: vayikra }
+          - { label: "Tzav", value: tzav }
+          - { label: "Shemini", value: shemini }
+          - { label: "Tazria", value: tazria }
+          - { label: "Metzora", value: metzora }
+          - { label: "Acharei Mos", value: acharei-mos }
+          - { label: "Kedoshim", value: kedoshim }
+          - { label: "Emor", value: emor }
+          - { label: "Behar", value: behar }
+          - { label: "Bechukosai", value: bechukosai }
+          - { label: "— Bamidbar —", value: "" }
+          - { label: "Bamidbar", value: bamidbar }
+          - { label: "Naso", value: naso }
+          - { label: "Beha'aloscha", value: behaaloscha }
+          - { label: "Shelach", value: shelach }
+          - { label: "Korach", value: korach }
+          - { label: "Chukas", value: chukas }
+          - { label: "Balak", value: balak }
+          - { label: "Pinchas", value: pinchas }
+          - { label: "Matos", value: matos }
+          - { label: "Masei", value: masei }
+          - { label: "— Devarim —", value: "" }
+          - { label: "Devarim", value: devarim }
+          - { label: "Va'eschanan", value: vaeschanan }
+          - { label: "Eikev", value: eikev }
+          - { label: "Re'eh", value: reeh }
+          - { label: "Shoftim", value: shoftim }
+          - { label: "Ki Seitzei", value: ki-seitzei }
+          - { label: "Ki Savo", value: ki-savo }
+          - { label: "Nitzavim", value: nitzavim }
+          - { label: "Vayeilech", value: vayeilech }
+          - { label: "Ha'azinu", value: haazinu }
+          - { label: "V'zos Haberachah", value: vezos-haberachah }
+          - { label: "— Holidays —", value: "" }
+          - { label: "Rosh Hashanah", value: rosh-hashanah }
+          - { label: "Yom Kippur", value: yom-kippur }
+          - { label: "Succos", value: succos }
+          - { label: "Chanukah", value: chanukah }
+          - { label: "Purim", value: purim }
+          - { label: "Pesach", value: pesach }
+          - { label: "Shavuos", value: shavuos }
+          - { label: "Tisha B'Av", value: tisha-bav }
+          - { label: "Other holiday", value: other }
+          - { label: "— Topics —", value: "" }
+          - { label: "General / Mitzvos", value: general }
+      - { name: year, label: "Year", widget: number, value_type: int, min: 2000, max: 2100, hint: "The year this message is for (used in the archive)." }
+      - { name: date, label: "Publish date", widget: datetime, format: "YYYY-MM-DD", date_format: "YYYY-MM-DD", time_format: false }
+      - { name: verses, label: "Verses", widget: string, required: false, hint: "e.g. Genesis 1:1-6:8 — leave blank to use the standard range." }
+      - { name: summary, label: "Short summary", widget: text, required: false, hint: "One or two sentences shown on the home page and in email." }
+      - { name: body, label: "Message", widget: markdown, buttons: [bold, italic, heading-two, heading-three, quote, bulleted-list, numbered-list, link], editor_components: [] }
+      - { name: draft, label: "Draft (hide from site)", widget: boolean, default: false, required: false }

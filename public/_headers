@@ -1,0 +1,4 @@
+/admin/*
+  X-Robots-Tag: noindex
+/pdf/*
+  Cache-Control: public, max-age=86400
