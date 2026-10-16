@@ -2,3 +2,6 @@ name = "torahtalk-auth"
 main = "auth.js"
 compatibility_date = "2026-10-01"
 workers_dev = true
+
+[vars]
+GITHUB_CLIENT_ID = "Ov23liDDLSrBU9hW0Bv3"
