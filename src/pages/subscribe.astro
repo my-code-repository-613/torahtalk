@@ -4,12 +4,10 @@ import Base from '../layouts/Base.astro';
 <Base title="Subscribe">
   <div class="max-w-xl">
     <h1 class="text-3xl font-semibold text-wine-dark mb-3">Get Torah Talk by email</h1>
-    <p class="mb-6">One message a week, before Shabbos. No ads, no sharing of your address.</p>
-    <!-- TODO: replace with the real email-list form once the list provider is chosen -->
-    <form class="font-sans text-sm flex gap-2" action="#" method="post">
-      <input type="email" name="email" required placeholder="you@example.com" class="flex-1 border border-rule rounded px-3 py-2 bg-white" />
-      <button class="bg-wine text-paper px-5 py-2 rounded hover:bg-wine-dark">Subscribe</button>
-    </form>
-    <p class="font-sans text-xs text-muted mt-4">Prefer a feed reader? <a href="/rss.xml" class="text-wine hover:underline">RSS</a></p>
+    <p class="mb-6">One message a week, before Shabbos. No ads, and your address is never shared.</p>
+    <!-- Interim: email-based signup, as on the original site. Replace with the list provider's form when chosen. -->
+    <a href="mailto:TorahTalk@gmail.com?subject=Subscribe&body=Please%20add%20me%20to%20the%20Torah%20Talk%20weekly%20email." class="inline-block bg-wine text-paper font-sans text-sm px-5 py-2.5 rounded hover:bg-wine-dark">Subscribe by email</a>
+    <p class="font-sans text-sm text-muted mt-4">This opens a new email to <a href="mailto:TorahTalk@gmail.com" class="text-wine hover:underline">TorahTalk@gmail.com</a> with "Subscribe" in the subject line — just send it. To stop receiving messages, send one with "Unsubscribe" instead.</p>
+    <p class="font-sans text-xs text-muted mt-8">Prefer a feed reader? <a href="/rss.xml" class="text-wine hover:underline">RSS feed</a></p>
   </div>
 </Base>
