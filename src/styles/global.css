@@ -39,3 +39,8 @@ body { font-family: var(--font-serif); line-height: 1.65; }
   h1 { font-size: 18pt; }
   .print-header { display: block !important; border-bottom: 1px solid #000; padding-bottom: .5em; margin-bottom: 1.5em; }
 }
+
+/* Poem block (About page) */
+.poem { white-space: pre-line; font-style: italic; margin: 1.2em 0 1.4em 1.5rem; line-height: 1.5; }
+.poem p { margin: 0 0 .5em; }
+.poem cite { display: block; font-style: normal; color: var(--color-muted); margin-top: .4em; }

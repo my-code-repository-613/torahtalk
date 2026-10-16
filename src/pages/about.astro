@@ -2,9 +2,9 @@
 import Base from '../layouts/Base.astro';
 import { marked } from 'marked';
 import fs from 'node:fs';
-const html = marked.parse(fs.readFileSync('src/content/pages/about.md', 'utf8'));
+const html = marked.parse(fs.readFileSync('src/content/pages/about.md', 'utf8'), { breaks: false });
 ---
-<Base title="About Rabbi Seplowitz">
+<Base title="About Rabbi Seplowitz" description="Rabbi Yerachmiel Seplowitz — chaplain, mohel, and sofer in Monsey, New York; author of Torah Talk since 2000.">
   <h1 class="text-3xl font-semibold text-wine-dark mb-6">About Rabbi Seplowitz</h1>
   <div class="prose-essay" set:html={html} />
 </Base>
