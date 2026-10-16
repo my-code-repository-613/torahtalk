@@ -88,7 +88,7 @@ for (const it of items) {
   const year = Number(yearInTitle ?? date.getUTCFullYear());
   // Drop teasers that slipped past the length filter: excerpt + "Read more" + prior-year links, no sign-off
   const plain = html.replace(/<[^>]+>/g, ' ');
-  if (!/yerachmiel\s+seplowitz/i.test(plain) && /read (the rest of this message|more)/i.test(plain) && /previous years/i.test(plain)) {
+  if (!/yerachmiel\s+seplowitz/i.test(plain) && /read (the rest of (this|the) message|more)/i.test(plain) && (/previous years/i.test(plain) || plain.length < 2500)) {
     report.push([wpId, type, status, date.toISOString(), '', '', '', link, 'skipped: teaser (read-more + archive links, no sign-off)']); continue;
   }
   let md = td.turndown(html).replace(/(\w)\*\*(\w)/g, '$1$2').replace(/\*\*\s*\*\*/g, '').replace(/\n{3,}/g, '\n\n').trim();
@@ -106,7 +106,7 @@ for (const it of items) {
     if (cut >= 0) {
       const removed = md.slice(cut).split('\n').filter(l => l.trim()).length; md = md.slice(0, cut).replace(/[*_]+$/, '').trim(); if (removed) footerNote = `footer cut: ${removed} lines`; } }
   const key = `${sefer}/${parsha}/${norm(title)}`;
-  if (seen.has(key)) { const prev = seen.get(key); if (prev.year <= year) { report.push([wpId, type, status, date.toISOString(), parsha, year, prev.out, link, `REPOST of ${prev.year}; skipped`]); redirects.push(`${new URL(link).pathname}  /essays/${prev.id}/  301`); continue; } else { fs.rmSync(prev.out, { force: true }); report.push([prev.wpId, '', '', '', parsha, prev.year, prev.out, '', `REPOST superseded by earlier ${year}`]); } }
+  if (seen.has(key)) { const prev = seen.get(key); const prevLen = fs.readFileSync(prev.out, 'utf8').length; if (prev.year <= year && !(md.length > prevLen * 2)) { report.push([wpId, type, status, date.toISOString(), parsha, year, prev.out, link, `REPOST of ${prev.year}; skipped`]); redirects.push(`${new URL(link).pathname}  /essays/${prev.id}/  301`); continue; } else if (md.length * 2 < prevLen) { report.push([wpId, type, status, date.toISOString(), parsha, year, prev.out, link, `REPOST (short) of ${prev.year}; skipped`]); redirects.push(`${new URL(link).pathname}  /essays/${prev.id}/  301`); continue; } else { fs.rmSync(prev.out, { force: true }); report.push([prev.wpId, '', '', '', parsha, prev.year, prev.out, '', `REPOST superseded by earlier ${year}`]); } }
   const id = `${sefer}/${parsha}/${year}-${slugify(title)}`;
   const out = path.join(OUT, id + '.md');
   fs.mkdirSync(path.dirname(out), { recursive: true });
