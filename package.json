@@ -31,7 +31,8 @@
     "gray-matter": "^4.0.3",
     "marked": "^18.1.1",
     "playwright": "^1.64.1",
-    "turndown": "^7.2.4"
+    "turndown": "^7.2.4",
+    "wrangler": "^4.151.0"
   },
   "type": "module",
   "private": true

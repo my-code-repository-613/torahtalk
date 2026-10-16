@@ -4,3 +4,4 @@ dist/
 public/pdf/
 import/
 .env
+worker/.env

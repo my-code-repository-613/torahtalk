@@ -3,7 +3,8 @@ backend:
   name: github
   repo: my-code-repository-613/torahtalk
   branch: main
-  base_url: https://torahtalk-auth.REPLACE.workers.dev   # OAuth bridge (Cloudflare Worker) — set during Phase 3
+  base_url: https://torahtalk-auth.mendy-zeiger.workers.dev
+  auth_endpoint: auth
   commit_messages:
     create: "New message: {{slug}}"
     update: "Update message: {{slug}}"
